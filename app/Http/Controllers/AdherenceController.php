@@ -1,18 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-// require_once 'vendor/autoload.php';
 
 use Illuminate\Http\Request;
-use App\Adherences;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use transit_realtime\FeedMessage;
+
+use App\Models\Adherence;
+use App\User;
 
 use DB;
 
-class AdherencesController extends Controller
+class AdherenceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,31 +21,11 @@ class AdherencesController extends Controller
      */
     public function index()
     {
-        //
-        $data = file_get_contents("http://gtfs.viainfo.net/gtfs-realtime/trapezerealtimefeed.pb");
-        $feed = new FeedMessage();
-        $feed->parse($data);
-        foreach ($feed->getEntityList() as $entity) {
-          if ($entity->hasTripUpdate()) {
-            error_log("trip: " . $entity->getId());
-          }
-          // dd($entity);
-        }
-        $data['routes'] = Adherences::where('routes', '2')->paginate(6);
-        return view('index')->with($data);
+        // dd(User::get());
+        
+        return view('test');
     }
 
-
-    public function values(){
-        $data = [];
-        $data['min'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MIN(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
-    
-        $data['avg'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, AVG(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
-
-        $data['max'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MAX(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
-
-        return view('test')->with($data);
-    }
 
     /**
      * Show the form for creating a new resource.
@@ -112,4 +92,7 @@ class AdherencesController extends Controller
     {
         //
     }
+
+    
+
 }
