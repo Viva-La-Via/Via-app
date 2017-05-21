@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-
     "hash": "93ff41f976e1f672f21cbedcae0c2185",
     "content-hash": "bc476ba84b798ef9bbd62baba45f3175",
     "packages": [
@@ -269,6 +268,8 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+<<<<<<< HEAD
+=======
         },
         {
             "name": "google/gtfs-realtime-bindings",
@@ -307,6 +308,7 @@
                 "gtfs-realtime"
             ],
             "time": "2015-02-27T05:57:56+00:00"
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -2113,9 +2115,13 @@
                 "docblock",
                 "parser"
             ],
+<<<<<<< HEAD
+            "time": "2015-08-31 12:32:49"
+=======
 
             "time": "2015-08-31 12:32:49"
 
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
         },
         {
             "name": "doctrine/cache",
@@ -2185,7 +2191,10 @@
                 "cache",
                 "caching"
             ],
+<<<<<<< HEAD
+=======
 
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
             "time": "2016-10-29 11:16:17"
         },
         {
@@ -2252,9 +2261,13 @@
                 "collections",
                 "iterator"
             ],
+<<<<<<< HEAD
+            "time": "2015-04-14 22:21:58"
+=======
 
             "time": "2015-04-14 22:21:58"
 
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
         },
         {
             "name": "doctrine/common",
@@ -2327,9 +2340,13 @@
                 "persistence",
                 "spl"
             ],
+<<<<<<< HEAD
+            "time": "2016-11-30 16:50:46"
+=======
 
             "time": "2016-11-30 16:50:46"
 
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
         },
         {
             "name": "doctrine/dbal",
@@ -2400,9 +2417,13 @@
                 "persistence",
                 "queryobject"
             ],
+<<<<<<< HEAD
+            "time": "2017-02-08 12:53:47"
+=======
 
             "time": "2017-02-08 12:53:47"
 
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
         },
         {
             "name": "doctrine/instantiator",
@@ -2457,6 +2478,63 @@
                 "instantiate"
             ],
             "time": "2015-06-14 21:17:01"
+<<<<<<< HEAD
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "lexer",
+                "parser"
+            ],
+            "time": "2014-09-09 13:34:57"
+=======
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
         },
         {
             "name": "fzaninotto/faker",
@@ -3788,9 +3866,13 @@
                 "check",
                 "validate"
             ],
+<<<<<<< HEAD
+            "time": "2016-11-23 20:04:58"
+=======
 
             "time": "2016-11-23 20:04:58"
 
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
         },
         {
             "name": "xethron/laravel-4-generators",
@@ -3836,9 +3918,13 @@
                 }
             ],
             "description": "Rapidly generate resources, migrations, models, and much more.",
+<<<<<<< HEAD
+            "time": "2017-02-23 11:20:49"
+=======
 
             "time": "2017-02-23 11:20:49"
 
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
         },
         {
             "name": "xethron/migrations-generator",
@@ -3890,9 +3976,13 @@
                 "migration",
                 "migrations"
             ],
+<<<<<<< HEAD
+            "time": "2017-02-15 21:39:05"
+=======
 
             "time": "2017-02-15 21:39:05"
 
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
         }
     ],
     "aliases": [],

@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+<div class="fl-page-fixed-nav-wrap col-md-9 col-sm-12">
+	<div class="fl-page-nav-wrap">
+		<nav class="fl-page-nav fl-nav navbar navbar-default" role="navigation">
+			<div class="fl-page-nav-collapse collapse navbar-collapse">
+				<ul class="fl-page-header-nav nav navbar-nav menu">
+					<li><a href="http://techstizo.com/">Home</a></li>
+				</ul>							
+			</div>
+		</nav>
+	</div>
+</div>
+=======
 
 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
@@ -77,3 +90,4 @@
 		</div>{{-- /.navbar-collapse --}}
 	</div>{{-- /.container-fluid --}}
 </nav>
+>>>>>>> 54ba06906e4d3e7db87dd2bcb67ad2c6089b05e8
