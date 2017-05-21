@@ -37,12 +37,20 @@ class AdherencesController extends Controller
 
 
     public function values(){
-        $data = [];
-        $data['min'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MIN(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
-    
-        $data['avg'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, AVG(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
 
-        $data['max'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MAX(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
+        $data = [];
+
+        $data['minRoutes'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MIN(ScheduledTimeS-ArrivalTimeS)')->groupBy('Routes')->orderBy('VehicleNumber','desc')->get());
+
+        $data['avgRoutes'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, AVG(ScheduledTimeS-ArrivalTimeS)')->groupBy('Routes')->orderBy('VehicleNumber','desc')->get());
+
+        $data['maxRoutes'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MAX(ScheduledTimeS-ArrivalTimeS)')->groupBy('Routes')->orderBy('VehicleNumber','desc')->get());
+
+        $data['minVehicle'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MIN(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
+
+        $data['avgVehicle'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, AVG(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
+
+        $data['maxVehicle'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MAX(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
 
         return view('test')->with($data);
     }
