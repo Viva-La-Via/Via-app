@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
 		{{-- Brand and toggle get grouped for better mobile display --}}
@@ -8,7 +9,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{{ (Auth::check()) ? '/home': '/' }}">
+			<a class="navbar-brand" href="#">
 				<img id="logo" src="/assets/img/foodnow-building.png">
 				<img id="logo" src="/assets/img/foodnow-words.png">
 			</a>
@@ -17,19 +18,19 @@
 		{{-- Collect the nav links, forms, and other content for toggling --}}
 		<div class="collapse navbar-collapse" id="navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				@if(Auth::check())
-					<li><img id="nav-image" src="{{Auth::user()->image}}" class="img-circle"></li>
+				{{-- @if(Auth::check())
+					<li><img id="nav-image" src="" class="img-circle"></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle hvr-icon-dropdown" data-toggle="dropdown">{{ Auth::user()->first_name }} {{ Auth::user()->last_name }} &nbsp;&nbsp;&nbsp;</a>
+						<a href="#" class="dropdown-toggle hvr-icon-dropdown" data-toggle="dropdown"></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="{{ action('UserController@show', Auth::id()) }}">Profile</a></li>
-							<li><a href="{{ action('UserController@edit', Auth::id()) }}">Edit Account</a></li>
-							<li><a href="{{ action('UserController@index') }}">Find Friends</a></li>
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Edit Account</a></li>
+							<li><a href="#">Find Friends</a></li>
 							<li class="divider"></li>
-							<li><a href="{{ action('Auth\AuthController@getLogout') }}">Logout</a></li>
+							<li><a href="#">Logout</a></li>
 						</ul>
 					</li>
-				@else
+				@else --}}
 			  		{{-- Login Dropdown --}}
 					<li><p class="navbar-text">Already have an account?</p></li>
 					<li class="dropdown">
@@ -43,7 +44,7 @@
 											<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
 										</div>
 										or
-										<form class="form" role="form" method="post" action="{{ action('Auth\AuthController@postLogin') }}" accept-charset="UTF-8" id="login-nav">
+										<form class="form" role="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
 											{{ csrf_field() }}
 											<div class="form-group">
 												<label class="sr-only" for="email-login">Email address</label>
@@ -71,7 +72,7 @@
 							</li>
 						</ul>{{-- /.dropdown-menu, /#login-dp --}}
 					</li>{{-- /.dropdown --}}
-				@endif
+				{{-- @endif --}}
 			</ul>{{-- /.nav navbar-nav navbar-right --}}
 		</div>{{-- /.navbar-collapse --}}
 	</div>{{-- /.container-fluid --}}

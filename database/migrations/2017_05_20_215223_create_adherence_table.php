@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateAdherenceTable extends Migration {
+class CreateAdherencesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateAdherenceTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('adherence', function(Blueprint $table)
+		Schema::create('adherences', function(Blueprint $table)
 		{
 			$table->string('ServiceDate')->nullable();
 			$table->integer('Routes')->nullable();
@@ -41,7 +41,7 @@ class CreateAdherenceTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('adherence');
+		Schema::drop('adherences');
 	}
 
 }
