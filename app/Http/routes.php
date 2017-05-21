@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/index', 'AdherencesController@index');
+
+
+Route::get('/test', 'AdherencesController@values');
