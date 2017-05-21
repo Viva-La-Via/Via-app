@@ -4,9 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-
-    "hash": "93ff41f976e1f672f21cbedcae0c2185",
-    "content-hash": "bc476ba84b798ef9bbd62baba45f3175",
+    "hash": "461c2f62bc9781b9b773d735c5bfa0a6",
+    "content-hash": "dd824373f4a16504d7c35c183619458c",
     "packages": [
         {
             "name": "centraldesktop/protobuf-php",
@@ -58,7 +57,7 @@
                 "protocol buffer",
                 "serializing"
             ],
-            "time": "2014-03-07T18:39:44+00:00"
+            "time": "2014-03-07 18:39:44"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -306,7 +305,7 @@
             "keywords": [
                 "gtfs-realtime"
             ],
-            "time": "2015-02-27T05:57:56+00:00"
+            "time": "2015-02-27 05:57:56"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -2113,9 +2112,7 @@
                 "docblock",
                 "parser"
             ],
-
             "time": "2015-08-31 12:32:49"
-
         },
         {
             "name": "doctrine/cache",
@@ -2185,7 +2182,6 @@
                 "cache",
                 "caching"
             ],
-
             "time": "2016-10-29 11:16:17"
         },
         {
@@ -2252,9 +2248,7 @@
                 "collections",
                 "iterator"
             ],
-
             "time": "2015-04-14 22:21:58"
-
         },
         {
             "name": "doctrine/common",
@@ -2327,9 +2321,7 @@
                 "persistence",
                 "spl"
             ],
-
             "time": "2016-11-30 16:50:46"
-
         },
         {
             "name": "doctrine/dbal",
@@ -2400,9 +2392,7 @@
                 "persistence",
                 "queryobject"
             ],
-
             "time": "2017-02-08 12:53:47"
-
         },
         {
             "name": "doctrine/instantiator",
@@ -2457,6 +2447,60 @@
                 "instantiate"
             ],
             "time": "2015-06-14 21:17:01"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "lexer",
+                "parser"
+            ],
+            "time": "2014-09-09 13:34:57"
         },
         {
             "name": "fzaninotto/faker",
@@ -3788,9 +3832,7 @@
                 "check",
                 "validate"
             ],
-
             "time": "2016-11-23 20:04:58"
-
         },
         {
             "name": "xethron/laravel-4-generators",
@@ -3836,9 +3878,7 @@
                 }
             ],
             "description": "Rapidly generate resources, migrations, models, and much more.",
-
             "time": "2017-02-23 11:20:49"
-
         },
         {
             "name": "xethron/migrations-generator",
@@ -3890,9 +3930,7 @@
                 "migration",
                 "migrations"
             ],
-
             "time": "2017-02-15 21:39:05"
-
         }
     ],
     "aliases": [],
