@@ -17,8 +17,6 @@
 		{{-- Font Awesome --}}
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
-		{{-- Animate CSS --}}
-		<link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
 
 		{{-- Custom View CSS --}}
 		@yield('css')
@@ -40,7 +38,7 @@
 	</body>
 		<h1> Hello World</h1>
 		{{-- jQuery --}}
-		<script src="/assets/js/jquery-1.11.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 		{{-- Bootstrap.js --}}
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		{{-- Custom JS --}}
