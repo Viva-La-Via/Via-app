@@ -22,17 +22,7 @@ class AdherencesController extends Controller
     public function index()
     {
         //
-        $data = file_get_contents("http://gtfs.viainfo.net/gtfs-realtime/trapezerealtimefeed.pb");
-        $feed = new FeedMessage();
-        $feed->parse($data);
-        foreach ($feed->getEntityList() as $entity) {
-          if ($entity->hasTripUpdate()) {
-            error_log("trip: " . $entity->getId());
-          }
-          // dd($entity);
-        }
-        $data['routes'] = Adherences::where('routes', '2')->paginate(6);
-        return view('index')->with($data);
+
     }
 
 
