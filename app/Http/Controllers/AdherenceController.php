@@ -1,18 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-// require_once 'vendor/autoload.php';
 
 use Illuminate\Http\Request;
-use App\Adherences;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use transit_realtime\FeedMessage;
+
+use App\Models\Adherence;
+use App\User;
 
 use DB;
 
-class AdherencesController extends Controller
+class AdherenceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,29 +21,11 @@ class AdherencesController extends Controller
      */
     public function index()
     {
-        //
-
+        // dd(User::get());
+        
+        return view('test');
     }
 
-
-    public function values(){
-
-        $data = [];
-
-        $data['minRoutes'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MIN(ScheduledTimeS-ArrivalTimeS)')->groupBy('Routes')->orderBy('VehicleNumber','desc')->get());
-
-        $data['avgRoutes'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, AVG(ScheduledTimeS-ArrivalTimeS)')->groupBy('Routes')->orderBy('VehicleNumber','desc')->get());
-
-        $data['maxRoutes'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MAX(ScheduledTimeS-ArrivalTimeS)')->groupBy('Routes')->orderBy('VehicleNumber','desc')->get());
-
-        $data['minVehicle'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MIN(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
-
-        $data['avgVehicle'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, AVG(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
-
-        $data['maxVehicle'] = (DB::table('adherences')->selectRaw('ServiceDate, VehicleNumber, Routes, MAX(ScheduledTimeS-ArrivalTimeS)')->groupBy('VehicleNumber')->orderBy('Routes','desc')->get());
-
-        return view('test')->with($data);
-    }
 
     /**
      * Show the form for creating a new resource.
@@ -110,4 +92,7 @@ class AdherencesController extends Controller
     {
         //
     }
+
+    
+
 }
