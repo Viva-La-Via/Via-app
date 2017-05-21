@@ -38,7 +38,7 @@
 		
 
 	</body>
-	
+		<h1> Hello World</h1>
 		{{-- jQuery --}}
 		<script src="/assets/js/jquery-1.11.1.min.js"></script>
 		{{-- Bootstrap.js --}}
