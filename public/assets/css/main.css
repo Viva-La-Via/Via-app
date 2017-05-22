@@ -1,3 +1,6 @@
-h1{
-	color:blue;
+#myChart {
+	width: 100% !important;
+	max-width: 1200px;
+	height: auto !important;
 }
+
